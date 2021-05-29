@@ -75,10 +75,10 @@ menu ul li:hover ul li{
 	</header>
    <menu>
 	<ul>
-        <li><a href="/">home</a></li>
-	    <li><a href="/kategori">kategori</a></li>
-		<li><a href="/buku">buku</a></li>
-		<li><a href="/anggota">anggota</a>
+	<li><a href="/">HOME</a></li>
+	    <li><a href="/kategori">KATEGORI</a></li>
+		<li><a href="/buku">BUKU</a></li>
+		<li><a href="/anggota">ANGGOTA SURABAYA</a>
 		</li>
 	</ul>
    </menu>

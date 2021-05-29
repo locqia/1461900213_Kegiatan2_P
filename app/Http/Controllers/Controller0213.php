@@ -20,4 +20,11 @@ class Controller0213 extends Controller
 
     	return view('kategori0213',['buku' => $kategoribuku]);
     }
+    public function anggotasurabaya(){
+        $anggotasurabaya = DB::table('anggota')
+        ->where('anggota_alamat', 'LIKE', "%Surabaya%")
+        ->get();
+
+    	return view('anggotasurabaya0213',['buku' => $anggotasurabaya]);
+    }
 }

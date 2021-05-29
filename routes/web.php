@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 Route::get('/buku', [Controller0213::class,'buku']);
 Route::get('/kategori', [Controller0213::class,'kategori']);
+Route::get('/anggota', [Controller0213::class,'anggotasurabaya']);

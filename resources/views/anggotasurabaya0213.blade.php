@@ -55,19 +55,19 @@ menu ul li:hover ul li{
 .recomended {
 	width: 100%;
 	overflow: hidden;
-	background-color: #191516;
+	background-color: #cc004f;
 }
 .recomended h1 {
 	text-align: center;
 	color: white;
 }
 
-
-
 </style>
+
 <html>
 <head>
        <title> Ququh/ </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
  <body>
     <header>
@@ -83,28 +83,37 @@ menu ul li:hover ul li{
 	</ul>
    </menu>
    <div class="recomended">
-	<h1>Welcome hehe :3</h1>
-	    <div class="recomendedkiri">
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
+	<table style="width : 100%; color : white">
+    <meta name="viewport" content="width+device-width,
+    initial-scale=1">
+    <title>Data Buku</title>
+    <style>
+       
+    </style>
+    <br>
+<center><h3>Kategori</h3></center>
+<br>
+<table cellspacing='0'>
+  <tr>
+                                                 
+                            <td>Id</td>
+                            <td>Nama Anggota</td>
+                            <td>Alamat Anggota</td>
+                            <td>Jenis Kelamin Anggota</td>
+							<td>Nomor Telephone</td>
+                        </tr>
+                        @foreach($buku as $Buku)
+                        <tr>
+                           <td>{{$Buku->anggota_id}}</td>       
+                            <td>{{$Buku->anggota_nama}}</td>
+                            <td>{{$Buku->anggota_alamat}}</td>
+							<td>{{$Buku->anggota_jk}}</td>
+                            <td>{{$Buku->anggota_telp}}</td>
+                        </tr>
+                        @endforeach
+                      
+                  
+    </table>
         </div>
 			
 	</div>
