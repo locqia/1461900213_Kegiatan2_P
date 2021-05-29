@@ -22,6 +22,7 @@ class Controller0213 extends Controller
     }
     public function anggotasurabaya(){
         $anggotasurabaya = DB::table('anggota')
+        ->join('pinjam','anggota.anggota_id','=','pinjam.anggota_id')
         ->where('anggota_alamat', 'LIKE', "%Surabaya%")
         ->get();
 
